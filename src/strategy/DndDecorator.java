@@ -24,4 +24,3 @@ public class DndDecorator extends StrategyDecorator {
         super.sendNotification(article, subscriber);
     }
 }
-

@@ -14,7 +14,6 @@ public class NewsAgency implements Observable {
     private NewsAgency() {
     }
 
-    // Singleton getInstance method
     public static NewsAgency getInstance() {
         if (instance == null) {
             instance = new NewsAgency();
@@ -77,6 +76,3 @@ public class NewsAgency implements Observable {
         notifySubscribers(article);
     }
 }
-
-
-

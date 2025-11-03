@@ -64,7 +64,7 @@ public class Article {
         }
 
         public Builder priority(int priority) {
-            this.priority = Math.max(0, Math.min(10, priority)); // 0-10
+            this.priority = Math.max(0, Math.min(10, priority));
             return this;
         }
         public Builder publishedDate(LocalDateTime publishedDate) {

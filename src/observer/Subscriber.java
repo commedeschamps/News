@@ -14,7 +14,6 @@ public class Subscriber implements Observer {
     private final Observable subject;
     private final Set<String> interests = new HashSet<>();
 
-
     private Subscriber(Builder builder) {
         this.name = builder.name;
         this.email = builder.email;
@@ -62,8 +61,6 @@ public class Subscriber implements Observer {
     @Override
     public void update(Article article) {
         String articleCategory = article.getCategory().toLowerCase();
-
-        // Filter by category if subscriber has interests
         if (!interests.isEmpty() && !interests.contains(articleCategory)) {
             return;
         }
