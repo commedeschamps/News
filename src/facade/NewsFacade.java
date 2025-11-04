@@ -8,7 +8,7 @@ import java.util.Objects;
 
 public class NewsFacade {
     private final NewsAgency agency;
-    private volatile NotificationStrategy defaultStrategy;
+    private NotificationStrategy defaultStrategy;
 
     public NewsFacade(NewsAgency agency) {
         this.agency = Objects.requireNonNull(agency, "agency");

@@ -1,6 +1,8 @@
-package strategy;
+package decorators;
 
-public abstract class StrategyDecorator implements NotificationStrategy{
+import strategy.NotificationStrategy;
+
+public abstract class StrategyDecorator implements NotificationStrategy {
     protected final NotificationStrategy wrappedStrategy;
     public StrategyDecorator(NotificationStrategy wrappedStrategy) {
         this.wrappedStrategy = wrappedStrategy;

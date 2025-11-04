@@ -1,7 +1,8 @@
-package strategy;
+package decorators;
 
 import model.Article;
 import observer.Subscriber;
+import strategy.NotificationStrategy;
 
 public class TeaserDecorator extends StrategyDecorator {
 

@@ -1,8 +1,10 @@
-package strategy;
+package decorators;
 
 import java.time.LocalTime;
+
 import model.Article;
 import observer.Subscriber;
+import strategy.NotificationStrategy;
 
 public class DndDecorator extends StrategyDecorator {
     private final LocalTime dndStartHour;

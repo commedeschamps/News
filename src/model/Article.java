@@ -12,7 +12,7 @@ public class Article {
     private final String author;
     private final int priority;
 
-    private Article(Builder builder) {
+    public Article(Builder builder) {
         this.id = builder.id;
         this.title = builder.title.trim();
         this.content = builder.content.trim();
